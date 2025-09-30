@@ -1,0 +1,16 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-timescale
+1ns/10ps
+Netlist/counter_map.v
+RTL/counter_tb.v
+-v
+Std_Cells_Verilog/tcbn65lp.v
+-access
++rwc
+-define
+SDF_TEST
+-mess
+-gui

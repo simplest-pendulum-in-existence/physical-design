@@ -1,0 +1,90 @@
+[cc@ncdc-0104 1_lab]$ xrun -timescale 1ns/10ps Netlist/counter_map.v RTL/counter_tb.v -v Std_Cells_Verilog/tcbn65lp.v -access +rwc -define SDF_TEST -mess -gui
+TOOL:	xrun(64)	23.09-s006: Started on Sep 30, 2025 at 08:17:38 PKT
+xrun(64): 23.09-s006: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+file: Netlist/counter_map.v
+	module worklib.counter:v
+		errors: 0, warnings: 0
+file: RTL/counter_tb.v
+end
+  |
+xmvlog: *E,EXPSMC (RTL/counter_tb.v,20|2): expecting a semicolon (';') [10.2.2][14(IEEE)].
+	module worklib.counter_tb:v
+		errors: 1, warnings: 0
+xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	xrun(64)	23.09-s006: Exiting on Sep 30, 2025 at 08:17:39 PKT  (total: 00:00:01)
+[cc@ncdc-0104 1_lab]$ xrun -timescale 1ns/10ps Netlist/counter_map.v RTL/counter_tb.v -v Std_Cells_Verilog/tcbn65lp.v -access +rwc -define SDF_TEST -mess -gui
+TOOL:	xrun(64)	23.09-s006: Started on Sep 30, 2025 at 08:18:14 PKT
+xrun(64): 23.09-s006: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+file: RTL/counter_tb.v
+	module worklib.counter_tb:v
+		errors: 0, warnings: 0
+file: Std_Cells_Verilog/tcbn65lp.v
+	module tcbn65lp.AN2XD1:v
+		errors: 0, warnings: 0
+	module tcbn65lp.CKND0:v
+		errors: 0, warnings: 0
+	module tcbn65lp.DFCND1:v
+		errors: 0, warnings: 0
+	module tcbn65lp.DFCNQD1:v
+		errors: 0, warnings: 0
+	module tcbn65lp.IAO21D1:v
+		errors: 0, warnings: 0
+	module tcbn65lp.MOAI22D1:v
+		errors: 0, warnings: 0
+	module tcbn65lp.ND2D1:v
+		errors: 0, warnings: 0
+	module tcbn65lp.OA21D1:v
+		errors: 0, warnings: 0
+	primitive tcbn65lp.tsmc_dff:v
+		errors: 0, warnings: 0
+	primitive tcbn65lp.tsmc_xbuf:v
+		errors: 0, warnings: 0
+		Caching library 'tcbn65lp' ....... Done
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		counter_tb
+xmelab: *W,SDFRDF: Read failed for file /home/cc/hamza_mateen/6_module/1_lab.
+	Reading SDF file from location "/home/cc/hamza_mateen/6_module/1_lab"
+xmsdfc: *E,SDFIRE: "/home/cc/hamza_mateen/6_module/1_lab", line 1: Syntax error "".
+xmelab: *W,SDFCNC: Cannot compile SDF file, /home/cc/hamza_mateen/6_module/1_lab - skipping annotation.
+$sdf_annotate("/home/cc/hamza_mateen/6_module/1_lab");
+            |
+xmelab: *W,CUSSTI (./RTL/counter_tb.v,19|12): This SDF System Task will be Ignored..
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.counter_tb:v <0x48a8ab66>
+			streams:   7, words:  4614
+		tcbn65lp.DFCND1:v <0x29f34062>
+			streams:   0, words:     0
+		tcbn65lp.IAO21D1:v <0x19f44fd1>
+			streams:   0, words:     0
+		tcbn65lp.OA21D1:v <0x7ce296dd>
+			streams:   0, words:     0
+		tcbn65lp.MOAI22D1:v <0x0d309b14>
+			streams:   0, words:     0
+		tcbn65lp.DFCNQD1:v <0x75584412>
+			streams:   0, words:     0
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                12      10
+		UDPs:                   44       2
+		Primitives:             65       7
+		Timing outputs:         11       9
+		Registers:               6       5
+		Scalar wires:           22       -
+		Always blocks:           1       1
+		Initial blocks:          3       3
+		Pseudo assignments:      2       -
+		Timing checks:          92       -
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.counter_tb:v
+xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /home/cc/mnt/XCELIUM2309/tools/xcelium/files/xmsimrc
+xcelium> 

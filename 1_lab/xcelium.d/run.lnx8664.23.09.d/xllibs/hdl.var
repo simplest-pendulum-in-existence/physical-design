@@ -1,0 +1,3 @@
+define LIB_MAP ( $LIB_MAP \
+, ../../../Std_Cells_Verilog/tcbn65lp.v => tcbn65lp \
+)
