@@ -1,0 +1,29 @@
+
+Git Safety Net Tips
+===================
+
+1. Commit Frequently
+   - Even if your changes are incomplete, make small commits.
+   - Use messages like "WIP: checkpoint" for partial progress.
+
+2. Use Git Stash
+   - Run `git stash` to save uncommitted changes safely.
+   - Retrieve later with `git stash pop`.
+
+3. Avoid `git restore .` Without Backup
+   - This will reset files to last commit and discard local changes.
+   - Always stash or commit before running it.
+
+4. Enable a Quick "WIP" Alias
+   - Add this to your ~/.gitconfig:
+     [alias]
+       wip = !git add -A && git commit -m 'WIP checkpoint'
+   - Run `git wip` anytime to save a snapshot.
+
+5. Check Editor Backups
+   - Vim: look for `.filename.swp` or `filename~` files.
+   - VSCode: check `.vscode` or local history extensions.
+
+6. System Recovery (Last Resort)
+   - Tools like `extundelete` may recover files on ext4.
+   - Harder if using LVM/XFS (often unrecoverable once deleted).

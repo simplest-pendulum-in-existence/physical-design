@@ -6,7 +6,17 @@
 # - Name: clk
 # - Period: 10 ns (100 MHz frequency)
 # - Waveform: rising at 0 ns, falling at 5 ns (50% duty cycle)
-create_clock -name clk -period 10 -waveform {0 5} [get_ports "clk"]
+
+# iteration 1 
+# create_clock -name clk -period 10 -waveform {0 5} [get_ports "clk"] 
+
+# TIP: let's not run iteration randomly but come up with an explanatory expedition 
+# towards understanding the core concepts and then try systematically and confindently!
+
+# iteration 2
+# my guess; now the slack should be reduced to 800 - 1200ps range
+create_clock -name clk -period 4 -waveform {0 2} [get_ports "clk"] 
+
 
 
 ####################################################################################################
