@@ -14,12 +14,10 @@ waves.shm/
 *.dsn
 
 # Tool working directories
-out/
-outputs/
-report/
-RPT/
-Netlist/
-snapshots/
+# out/
+# outputs/
+# report/
+# RPT/
 xcelium.d/
 *.history
 *.key
@@ -47,3 +45,51 @@ extras/out_*.txt
 !test_scripts/
 !65_lp_libs/
 !Std_Cells_Verilog/
+!snapshots/
+!genus.log*
+genus.cmd*
+qaLog.txt
+synthesis_report.html
+
+# Simulation / debug junk
+*.shm/
+*.diag
+xrun.*
+simvision*.diag
+waves.shm/
+*.trn
+*.dsn
+
+# Tool working directories
+
+xcelium.d/
+*.history
+*.key
+*.log
+
+# Formal verification intermediate files
+fv/*.gz
+fv/*.do~
+fv/*.json
+fv/*.v
+
+# Extras / learning notes you may not want tracked
+extras/out_*.txt
+
+# Editor/OS junk
+*~
+*.swp
+.DS_Store
+
+# Keep source
+!RTL/
+!constraints/
+!script.tcl
+!DFT_script.tcl
+!test_scripts/
+!65_lp_libs/
+!Std_Cells_Verilog/
+!out/
+!outputs/
+!report/
+!RPT/
