@@ -36,4 +36,15 @@
         because this much time through a cycle is being internally wasted waiting for 
         next clock edge only. let's see!
 
-    -   iteration 2 =>  
+    -   iteration 2 => 812! it worked on the first go.
+
+#### Now after DFT insertion into design
+
+* current slack information:
+
+    - slack = 829ps already!
+
+
+
+### learning file types and their usage (lab task)
+

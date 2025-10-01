@@ -18,7 +18,7 @@ xrun \
    +xmoverride_timescale \
    +xmseq_udp_delay+2ps \
    +libext+.v+.V+.z+.Z+.gz \
-   +xmlibdirname+$WORKDIR/Inca_libs_08_31_23 \
+   +xmlibdirname+$WORKDIR/Inca_libs_05_08_12 \
    -l $WORKDIR/ncverilog_FULLSCAN.log \
   -v /home/cc/hamza_mateen/6_module/1_lab/65_lp_libs/tcbn65lptc.lib \
 $WORKDIR/counter.test_netlist.v \
