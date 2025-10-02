@@ -14,12 +14,6 @@ waves.shm/
 *.dsn
 
 # Tool working directories
-out/
-outputs/
-report/
-RPT/
-Netlist/
-snapshots/
 xcelium.d/
 *.history
 *.key
@@ -47,3 +41,8 @@ extras/out_*.txt
 !test_scripts/
 !65_lp_libs/
 !Std_Cells_Verilog/
+!outputs/
+!report/
+!RPT/
+!Netlist/
+!snapshots/

@@ -1,0 +1,1 @@
+xrun -timescale 1ns/10ps counter_map.v counter_tb.v -v tcbn65lp.v -access +rwc -define SDF_TEST -mess -gui

@@ -36,4 +36,24 @@
         because this much time through a cycle is being internally wasted waiting for 
         next clock edge only. let's see!
 
-    -   iteration 2 =>  
+    -   iteration 2 =>  812
+
+
+
+##### Understanding script.tcl
+- uses v2001
+- set path to project root
+- search and accumulate .lib files provided in said path
+
+In design settings: 
+    set design top module name (counter).
+    set the synthesis (generic) and mapping effort to "high" 
+        this means that Genus would try to spend more time 
+        and compute power to come up with highly optimized design
+        mapping of standard cells from generalized netlist/module.
+
+elaborating design:
+    - read the *.v file (v2001 verilog version)
+    - read 
+
+##### Understanding constraints.sdc
