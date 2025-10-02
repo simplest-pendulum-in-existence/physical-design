@@ -15,13 +15,9 @@
 
 # iteration 2
 # my guess; now the slack should be reduced to 800 - 1200ps range
-create_clock -name clk -period 4 -waveform {0 2} [get_ports "clk"] 
+create_clock -name clk -period 10 -waveform {0 5} [get_ports "clk"] 
 
-
-
-####################################################################################################
 ## Clock Uncertainty (Jitter/Skew)
-####################################################################################################
 
 # Setup uncertainty (added during setup analysis for safety margin)
 set_clock_uncertainty -setup 2 [get_clocks "clk"]
@@ -33,27 +29,21 @@ set_clock_uncertainty -hold 1 [get_clocks "clk"]
 set_clock_uncertainty 0.01 [get_ports "clk"]
 
 
-####################################################################################################
 ## Clock Transition (Slew)
-####################################################################################################
 
 # Specify input transition times for the clock signal
 set_clock_transition -rise 0.1 [get_clocks "clk"]   ;# Rise time = 0.1 ns
 set_clock_transition -fall 0.1 [get_clocks "clk"]   ;# Fall time = 0.1 ns
 
 
-####################################################################################################
 ## Input Constraints
-####################################################################################################
 
 # Input delay constraint on "reset" relative to clk
 # - Maximum delay: 1 ns
 set_input_delay -max 1.0 [get_ports "reset"] -clock [get_clocks "clk"]
 
 
-####################################################################################################
 ## Output Constraints
-####################################################################################################
 
 # Output delay constraint on "count" relative to clk
 # - Maximum delay: 1 ns
