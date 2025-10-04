@@ -37,14 +37,8 @@ set_clock_transition -fall 0.1 [get_clocks "clk"]   ;# Fall time = 0.1 ns
 
 
 ## Input Constraints
-
-# Input delay constraint on "reset" relative to clk
-# - Maximum delay: 1 ns
 set_input_delay -max 1.0 [get_ports "reset"] -clock [get_clocks "clk"]
 
 
 ## Output Constraints
-
-# Output delay constraint on "count" relative to clk
-# - Maximum delay: 1 ns
 set_output_delay -max 1.0 [get_ports "count"] -clock [get_clocks "clk"]

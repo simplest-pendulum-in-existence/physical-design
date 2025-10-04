@@ -57,3 +57,16 @@ elaborating design:
     - read 
 
 ##### Understanding constraints.sdc
+
+
+
+
+
+
+
+
+
+# this is the end!
+The idea of infinite regress ?
+
+so if we assume the underlying system that churns out more complexity that it contains within, then does it not lead us to a system which consistently has lesser compute power then the system it produces.  If it is so, then it should lead to equally terrifying scenario where everything comes out of nothing. Infinite regress in both directions is a horrifying idea or at least paradoxical.

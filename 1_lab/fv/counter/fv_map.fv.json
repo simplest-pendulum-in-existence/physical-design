@@ -249,20 +249,20 @@
 "object":"/designs/counter/instances_seq/count_reg[0]",
 "type":"instance"},
 {"index": "1", 
- "date": "Tue Sep 30 22:03:28 UTC 2025",
- "seconds": 1759269808.367537,
+ "date": "Fri Oct 03 22:38:19 UTC 2025",
+ "seconds": 1759531099.14335,
  "netlist": "fv/counter/fv_map.v.gz", 
  "netlist_exists": "1", 
  "netlist_normalize": "/home/cc/hamza_mateen/6_module/1_lab/fv/counter/fv_map.v.gz", 
- "netlist_mtime": "1759269807", 
- "netlist_timestamp": "Tue Sep 30 22:03:27 UTC 2025", 
- "netlist_size": "487", 
- "netlist_cksum": "2230897574", 
+ "netlist_mtime": "1759531098", 
+ "netlist_timestamp": "Fri Oct 03 22:38:18 UTC 2025", 
+ "netlist_size": "452", 
+ "netlist_cksum": "3268140163", 
  "design_name": "counter", 
  "synth_workdir": "/home/cc/hamza_mateen/6_module/1_lab", 
  "synthesis_command":"",
  "current_label": "fv_map", 
  "previous_label": "rtl", 
- "write_verif_file_runtime": 0.39325699999999997 
+ "write_verif_file_runtime": 0.43144299999999997 
  }
 ]
