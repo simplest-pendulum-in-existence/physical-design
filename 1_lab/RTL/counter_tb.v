@@ -20,8 +20,6 @@ $sdf_annotate("/home/cc/hamza_mateen/6_module/1_lab/counter_map.sdf", counter_tb
 end
 `endif
 
-
-  
     always #5 clk = ~clk;  
 
     initial begin
