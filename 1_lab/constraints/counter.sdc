@@ -14,8 +14,7 @@
 # towards understanding the core concepts and then try systematically and confindently!
 
 # iteration 2
-# my guess; now the slack should be reduced to 800 - 1200ps range
-create_clock -name clk -period 10 -waveform {0 5} [get_ports "clk"] 
+create_clock -name clk -period 3.2 -waveform {0 1.6} [get_ports "clk"] 
 
 ## Clock Uncertainty (Jitter/Skew)
 

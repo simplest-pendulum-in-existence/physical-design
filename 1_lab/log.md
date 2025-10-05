@@ -63,10 +63,31 @@ elaborating design:
 
 
 
+# learning about the idea of ATPG 
 
+Test vector generation stuck at a fault means the Automatic Test Pattern Generation (ATPG) process cannot find the necessary test vectors to detect all the stuck-at faults in a circuit, often because the circuit is large or complex, specific faults are hard to detect, or a combination of ATPG algorithms and other techniques (like fault simulation or branch-and-bound) are required to cover more faults or complete the process efficiently. 
+
+Reasons for Stuck Vector Generation
+
+Inadequate ATPG Algorithms: While some ATPG algorithms like D-algorithm, PODEM, and FAN are efficient, they are not sufficient for complex circuits and must be combined with fault grading mechanisms and other advanced techniques to cover all faults, according to a report on Springer. 
+
+Stuck-Open Faults in CMOS: The standard stuck-at fault model is not fully effective for CMOS logic, as stuck-open faults can occur and are not reliably detected by a single test vector, necessitating sequential application of two vectors, notes the Wikipedia page on Stuck-at Fault. 
+
+Bridging Faults: The stuck-at fault model also fails to detect bridging faults, where adjacent signal lines are shorted together, which is another common type of defect in digital circuits. 
+
+Solutions to Address the Issue
+
+Advanced ATPG Algorithms: Employing advanced ATPG techniques that utilize the Boolean difference theory, or combining algorithms with genetic algorithms, can help find minimal sets of test vectors, says this paper on ResearchGate. 
+
+Fault Collapsing: Grouping equivalent faults into a single representative fault to reduce the number of faults that need to be detected can simplify the test generation process, explains a YouTube video on VLSI testing. 
+
+Design for Testability (DFT): Incorporating testability features into the circuit design itself can make it easier to detect faults, for example, by adding specific scan chains to improve test vector generation and coverage, notes this paper on ResearchGate. 
 
 
 # this is the end!
 The idea of infinite regress ?
 
 so if we assume the underlying system that churns out more complexity that it contains within, then does it not lead us to a system which consistently has lesser compute power then the system it produces.  If it is so, then it should lead to equally terrifying scenario where everything comes out of nothing. Infinite regress in both directions is a horrifying idea or at least paradoxical.
+
+
+xrun -timescale 1ns/10ps counter_map.v counter_tb.v -v /home/cc/Desktop/PD/PDK_files/tcbn65lp.v -access +rwc -define SDF_TEST -mess – gui

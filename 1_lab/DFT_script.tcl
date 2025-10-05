@@ -49,14 +49,10 @@ check_design -unresolved
 # read_sdc /home/cc/HIRA_PD_cadence/COHORT3/Frontend/constraints/counter.sdc
 read_sdc [file join $base_path "constraints/counter.sdc"]
 
-####################################################################################################
 ## DFT (Design-for-Test) Setup
-####################################################################################################
 
-# Define scan insertion style (muxed scan)
 set_db dft_scan_style muxed_scan
 
-# Prefix for DFT signals
 set_db dft_prefix dft_
 
 # Define scan enable (SE) signal, active-high, and create port
@@ -83,23 +79,16 @@ set_db / .syn_opt_effort $MAP_OPT_EFF
 syn_opt
 
 
-####################################################################################################
 ## DFT Scan Chain Insertion
-####################################################################################################
 
-# Re-check DFT compliance after synthesis
 check_dft_rules
 
-# Define minimum number of scan chains for design
 set_db design:counter .dft_min_number_of_scan_chains 1
 
-# Define scan chain connections (scan input/output)
 define_scan_chain -name top_chain -sdi scan_in -sdo scan_out -create_ports
 
-# Auto-connect scan chains
 connect_scan_chains -auto_create_chains
 
-# Re-run optimization incrementally after scan insertion
 syn_opt -incr
 
 

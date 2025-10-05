@@ -29,7 +29,7 @@ xrun \
    +sdf_file+DEFAULT.sdf \
    +xmerror+CUSFNF \
    +define+TIMING \
-   +xmlibdirname+$WORKDIR/Inca_libs_08_31_23 \
+   +xmlibdirname+$WORKDIR/Inca_libs_05_10_19 \
    -l $WORKDIR/ncverilog_FULLSCAN_TIMED.log \
   -v /home/cc/hamza_mateen/6_module/1_lab/65_lp_libs/tcbn65lptc.lib \
 $WORKDIR/counter.test_netlist.v \
